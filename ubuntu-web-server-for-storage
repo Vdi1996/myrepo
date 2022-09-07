@@ -1,0 +1,11 @@
+#!/bin/bash
+  sudo apt update                          # To update the software versions 
+  sudo apt -y install apache2              # To install the 'apache'
+  cat <<EOF > /var/www/html/index.html
+  <html>
+  <body>
+  </body>
+                      <!-- Mention the Object URL's-->
+  <img src="https://storage.googleapis.com/casestudy-bucket/Danyavadh.jpg">
+  <img src="https://storage.googleapis.com/casestudy-bucket/sonata.png">
+  </html>

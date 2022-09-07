@@ -1,0 +1,11 @@
+#!/bin/bash
+sudo yum update
+sudo yum install httpd
+sudo systemctl start httpd
+cat <<EOF > /var/www/html/index.html
+  <html>
+  <body>
+  <marquee><h1>Hi! welcome to my page </h1></marquee>
+  </body>
+  <img src="https://storage.googleapis.com/casestudy-bucket/Danyavadh.jpg">
+  </html>
